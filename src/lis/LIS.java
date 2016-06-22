@@ -15,9 +15,9 @@ public class LIS {
 			int max = 1;
 			for (int j = 0; j < i; j++) {
 				if (a[i] > a[j]) {
-					max = getMax(max, dp[j] + 1);
+					max = Math.max(max, dp[j] + 1);
 				} else if (a[i] == a[j]) {
-					max = getMax(max, dp[j]);
+					max = Math.max(max, dp[j]);
 				}
 			}
 			dp[i] = max;
@@ -47,13 +47,6 @@ public class LIS {
 			System.out.print(d[i] + " ");
 		}
 		System.out.println();
-	}
-
-	private static int getMax(int max, int i) {
-		if (max > i)
-			return max;
-		else
-			return i;
 	}
 
 }

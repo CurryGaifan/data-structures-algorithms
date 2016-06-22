@@ -1,6 +1,6 @@
 package other;
 public class Fibonacci {
-	static int Fibonacci1(int n)//µİ¹é
+	static int Fibonacci1(int n)//é€’å½’
 	{
 
 		if (n == 0 || n == 1) {
@@ -10,7 +10,7 @@ public class Fibonacci {
 		}
 	}
 
-	static int Fibonacci2(int n)//¶îÍâ¿Õ¼ä
+	static int Fibonacci2(int n)//é¢å¤–ç©ºé—´
 	{
 		int result = 0;
 		int a[] = { 0, 1 };
